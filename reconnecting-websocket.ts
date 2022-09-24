@@ -22,7 +22,9 @@ const isWebSocket = (w: any) => typeof w !== 'undefined' && !!w && w.CLOSING ===
 export type Event = Events.Event;
 export type ErrorEvent = Events.ErrorEvent;
 export type CloseEvent = Events.CloseEvent;
-
+/**
+* Sept 2022 added rejectUnauthorized to the options to allow certificate errors for self-signed
+*/
 export type Options = {
     WebSocket?: any;
     maxReconnectionDelay?: number;
@@ -34,6 +36,7 @@ export type Options = {
     maxEnqueuedMessages?: number;
     startClosed?: boolean;
     debug?: boolean;
+    rejectUnauthorized?: boolean;
 };
 
 const DEFAULT = {
@@ -46,6 +49,7 @@ const DEFAULT = {
     maxEnqueuedMessages: Infinity,
     startClosed: false,
     debug: false,
+    rejectUnauthorized: false
 };
 
 export type UrlProvider = string | (() => string) | (() => Promise<string>);
