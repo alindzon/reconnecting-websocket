@@ -25,7 +25,7 @@
         "forever",
         "automatic"
     ],
-    "author": "Pedro Ladaria <pedro.ladaria@gmail.com>",
+    "author": "Pedro Ladaria <pedro.ladaria@gmail.com> edited by Andrew Lindzon",
     "files": [
         "dist/*"
     ],
@@ -58,15 +58,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pladaria/reconnecting-websocket.git"
+        "url": "git+https://github.com/alindzon/reconnecting-websocket.git"
     },
     "bugs": {
-        "url": "https://github.com/pladaria/reconnecting-websocket/issues"
+        "url": "https://github.com/alindzon/reconnecting-websocket/issues"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org"
     },
-    "homepage": "https://github.com/pladaria/reconnecting-websocket#readme",
+    "homepage": "https://github.com/alindzon/reconnecting-websocket#readme",
     "lint-staged": {
         "linters": {
             "*.{js,md,ts}": [
